@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chocolate Cake Recipe</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="recipe-card">
+        <h1>Chocolate Cake</h1>
+        <img src="chocolate-cake.jpg" alt="Chocolate Cake" class="recipe-image">
+        <button class="toggle-btn" onclick="toggleSection('ingredients')">Show Ingredients</button>
+        <ul id="ingredients" class="ingredients-list hidden">
+            <h3>Dry Ingredients</h3>
+            <li>1 ¾ cup (220g) All-purpose flour</li>
+            <li>¾ cup (65g) Unsweetened cocoa powder</li>
+            <li>2 cups (400g) Sugar</li>
+            <li>1 ½ tsp Baking powder</li>
+            <li>1 ½ tsp Baking soda</li>
+            <li>½ tsp Salt</li>
+
+            <h3>Wet Ingredients</h3>
+            <li>2 large Eggs</li>
+            <li>1 cup (240ml) Milk</li>
+            <li>½ cup (120ml) Vegetable oil / melted butter</li>
+            <li>2 tsp Vanilla extract</li>
+            <li>1 cup (240ml) Hot water / hot coffee</li>
+
+            <h3>For Frosting</h3>
+            <li>200g Dark chocolate</li>
+            <li>200ml Fresh cream</li>
+            <li>2 tbsp Butter</li>
+            <li>(Optional: Powdered sugar for buttercream)</li>
+        </ul>
+
+
+        <button class="toggle-btn" onclick="toggleSection('instructions')">Show Instructions</button>
+        <ol id="instructions" class="instructions-list hidden">
+            <li>Dry mix: Combine flour, cocoa, sugar, baking powder, baking soda, and salt.</li>
+            <li>Wet mix: Whisk together eggs, milk, oil, and vanilla.</li>
+            <li>Combine: Mix the wet and dry ingredients.</li>
+            <li>Add liquid: Finally, add hot water/coffee and stir until smooth.</li>
+            <li>Bake: Pour into a greased tin and bake at 180°C for 30–35 minutes.</li>
+            <li>Cool: Let the cake cool completely.</li>
+            <li>Frost: Apply ganache/buttercream and decorate (berries, choco chips, etc.). ✅</li>
+            <li>Serve: Slice and enjoy your delicious chocolate cake! 🍰</li>
+        </ol>
+        <div class="time-info">Preparation Time: 1 Hr 20 minutes | Serves: 10</div>
+        <button class="start-btn" onclick="startCooking()">Start Cooking</button>
+        <div class="progress-bar"><div class="progress"></div></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
